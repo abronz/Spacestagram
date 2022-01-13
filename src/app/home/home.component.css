@@ -1,0 +1,22 @@
+.image-card {
+  margin: 20px;
+  flex: 29%
+}
+
+.image-card img {
+  cursor: pointer;
+}
+
+.breadcrumb {
+  background-color: #424242;
+  margin: 20px;
+}
+
+.breadcrumb li a {
+  color: #fafafa;
+}
+
+.images-container {
+  display: flex;
+  flex-wrap: wrap;
+}

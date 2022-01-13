@@ -1,0 +1,12 @@
+.image-card {
+  margin: 10px
+}
+
+.breadcrumb {
+  background-color: #424242;
+  margin: 20px;
+}
+
+.breadcrumb li a {
+  color: #fafafa;
+}

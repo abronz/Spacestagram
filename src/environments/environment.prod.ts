@@ -1,3 +1,4 @@
 export const environment = {
-  production: true
+  production: true,
+  homeLink: 'localhost:4200/'
 };

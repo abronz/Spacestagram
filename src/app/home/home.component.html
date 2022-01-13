@@ -1,0 +1,32 @@
+
+
+<div class="container" >
+  <nav aria-label="breadcrumb" *ngIf="!loading">
+    <ol class="breadcrumb">
+      <li class="breadcrumb-item active"><a href="#">Home</a></li>
+    </ol>
+  </nav>
+
+  <mat-spinner *ngIf="loading" style="margin:0 auto;"></mat-spinner>
+
+  <div class="images-container">
+    <mat-card *ngFor="let image of imageList" class="image-card" >
+      <mat-card-header>
+        <mat-card-title>{{image.title}}</mat-card-title>
+      </mat-card-header>
+      <img mat-card-image src="{{image.url}}" alt="" routerLink="/image/{{image.date}}">
+      <mat-card-content>
+        <p>
+          Date Posted: {{image.date}}
+        </p>
+      </mat-card-content>
+      <mat-card-actions>
+        <button mat-raised-button *ngIf="!checkIfLiked(image.date)" color="primary" (click)="likeImage(image)">LIKE</button>
+        <button mat-raised-button *ngIf="checkIfLiked(image.date)" color="accent" (click)="unlikeImage(image.date)">UNLIKE</button>
+      </mat-card-actions>
+    </mat-card>
+
+  </div>
+
+
+</div>

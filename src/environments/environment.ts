@@ -3,7 +3,10 @@
 // The list of file replacements can be found in `angular.json`.
 
 export const environment = {
-  production: false
+  production: false,
+  homeLink: 'http://localhost:4200/',
+  nasaApodApi: 'https://api.nasa.gov/planetary/apod?api_key=QdSX6Muc9WIANLcmFjRHDsiuHWmh2U9JOOa2GnUY',
+  dbApi: 'http://localhost:8080/api'
 };
 
 /*
