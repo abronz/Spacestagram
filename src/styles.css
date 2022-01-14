@@ -1,1 +1,9 @@
 /* You can add global styles to this file, and also import other style files */
+.container {
+  background-color: rgb(24,24,24);
+  border-radius: 15px;
+}
+
+header {
+  background-color: rgb(24,24,24);
+}
