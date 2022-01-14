@@ -20,3 +20,10 @@
   display: flex;
   flex-wrap: wrap;
 }
+
+.details-container {
+  margin-left: 20px;
+  margin-right: 20px;
+  word-wrap: break-word;
+  color: white
+}
