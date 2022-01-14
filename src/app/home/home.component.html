@@ -9,6 +9,10 @@
 
   <mat-spinner *ngIf="loading" style="margin:0 auto;"></mat-spinner>
 
+  <div *ngIf="!loading" class="details-container">
+    Below are some of the daily images given by NASA's Open API. Click an image to get more details about that image.
+  </div>
+
   <div class="images-container">
     <mat-card *ngFor="let image of imageList" class="image-card" >
       <mat-card-header>
