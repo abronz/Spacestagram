@@ -4,9 +4,9 @@
 
 export const environment = {
   production: false,
-  homeLink: 'http://localhost:4200/',
+  homeLink: 'https://spacestagram-oen0gm6dw-abronz.vercel.app/',
   nasaApodApi: 'https://api.nasa.gov/planetary/apod?api_key=QdSX6Muc9WIANLcmFjRHDsiuHWmh2U9JOOa2GnUY',
-  dbApi: 'http://localhost:8080/api'
+  dbApi: 'https://spacestagram-api.herokuapp.com/api'
 };
 
 /*
