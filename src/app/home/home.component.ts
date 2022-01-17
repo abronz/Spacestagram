@@ -21,12 +21,13 @@ export class HomeComponent implements OnInit {
   ngOnInit() {
     this.loading = true;
     this.imgService.getImages().subscribe(data => {
-      this.loading = false
+      this.dbService.getLikedImages().subscribe(data => {
+        this.loading = false
+        this.likedList = data
+      })
       this.imageList = data
     })
-    this.dbService.getLikedImages().subscribe(data => {
-      this.likedList = data
-    })
+
   }
 
   likeImage(image) {
